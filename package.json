@@ -1,0 +1,19 @@
+{
+  "name":"backbone-begin",
+  "version":"0.0.0",
+
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "bbb": "~0.2.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compress": "~0.6.0",
+    "grunt-processhtml": "~0.2.0"
+  },
+  "peerDependencies": {
+    "generator-bbb": "*",
+    "grunt-cli": "*"
+  }
+}
