@@ -10,7 +10,8 @@ The easiest way to get started is to install Git and clone the
 repository:
 
 ``` bash
-# Using Git, fetch only the latest commits.  You won't  need the full history for your project.
+# Using Git, fetch only the latest commits.  You won't  
+# need the full history for your project.
 git clone --depth 1 https://github.com:jonezy/backbone-begin
 
 # Move the repository to your own project name.
