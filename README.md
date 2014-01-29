@@ -35,9 +35,6 @@ npm install -g grunt-cli bower
 
 # Install NPM dependencies.
 npm install
-
-# Install Bower dependencies.
-bower install
 ```
 
 ## Build process ##
