@@ -41,26 +41,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // This task simplifies working with CSS inside Backbone Boilerplate
-    // projects.  Instead of manually specifying your stylesheets inside the
-    // HTML, you can use `@imports` and this task will concatenate only those
-    // paths.
-    styles: {
-      // Out the concatenated contents of the following styles into the below
-      // development file path.
-      "dist/css/styles.css": {
-        // Point this to where your `index.css` file is location.
-        src: "css/index.css",
-
-        // The relative path to use for the @imports.
-        paths: ["css/"],
-
-        // Rewrite image paths during release to be relative to the `img`
-        // directory.
-        forceRelative: "/img/"
-      }
-    },
-
     // Minify the distribution CSS.
     cssmin: {
       release: {
@@ -82,13 +62,6 @@ module.exports = function(grunt) {
         options: {
           prefix: "dist"
         }
-      },
-
-      test: {
-        options: {
-          forever: false,
-          port: 8001
-        }
       }
     },
 
@@ -100,24 +73,15 @@ module.exports = function(grunt) {
       }
     },
 
-    // Move vendor and app logic during a build.
+    // Move js templates during build
     copy: {
       release: {
         files: [
           { src: ["templates/*"], dest: "dist/"}
         ],
       }
-    },
-
-    compress: {
-      release: {
-        options: {
-          archive: "dist/source.min.js.gz"
-        },
-
-        files: ["dist/js/source.min.js"]
-      }
     }
+
   });
 
   // Grunt contribution tasks.
@@ -136,11 +100,10 @@ module.exports = function(grunt) {
   // When running the default Grunt command, just lint the code.
   grunt.registerTask("default", [
     "clean",
-    //"jshint",
+    "jshint",
     "processhtml",
     "copy",
     "requirejs",
-    //"styles",
     "cssmin",
   ]);
 };

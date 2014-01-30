@@ -10,7 +10,7 @@ require(['config'], function() {
     'views/index'
   ], function($, App, Router) {
     $(function() {
-      var appRouter = new App.Router;
+      var appRouter = new App.Router();
     });
   });
 });
