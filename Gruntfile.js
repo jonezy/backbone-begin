@@ -29,7 +29,7 @@ module.exports = function(grunt) {
           // Setting the base url to the distribution directory allows the
           // Uglify minification process to correctly map paths for Source
           // Maps.
-          baseUrl: "dist/js",
+          baseUrl: "js",
 
           // Wrap everything in an IIFE.
           wrap: true,
@@ -104,7 +104,6 @@ module.exports = function(grunt) {
     copy: {
       release: {
         files: [
-          { src: ["js/**"], dest: "dist/" },
           { src: ["templates/*"], dest: "dist/"}
         ],
       }
