@@ -1,3 +1,6 @@
+// This is the applications main entry point.  Do anything that 
+// needs to be done once here!
+
 // load the config externally for extensibility
 require(['config'], function() {
   require([

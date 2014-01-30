@@ -3,7 +3,7 @@ define([
   'underscore',
   'backbone'
 ], function($, _, Backbone) {
-  var app = {};
+  var app = window.BackboneBegin = {};
   app.Collections = {};
   app.Models = {};
   app.Views = {};
