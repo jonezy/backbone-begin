@@ -7,9 +7,9 @@ define([
 ], function($, _, Backbone, App, indexTemplate) {
 
   App.Views.Index = Backbone.View.extend({
+    template: indexTemplate,
     render: function() {
-      var output = _.template(indexTemplate, {name:'Chris'});
-      this.$el.html(output);
+      this.$el.html(_.template(this.template));
 
       return this;
     }
