@@ -11,12 +11,14 @@ require(['config'], function() {
     // app without having to load again. Of course this is optional, you 
     // can still load models and views etc in each individual file if
     // you prefer to do so.
-    'router',
     'views/index',
-    'views/docs'
+    'views/docs',
+    'views/navigation',
+    'router'
   ], function($, App) {
     $(function() {
       var appRouter = new App.Router();
+      var navigation = new App.Views.Navigation();
     });
   });
 });
