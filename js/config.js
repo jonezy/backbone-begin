@@ -3,6 +3,7 @@ require.config({
     jquery: 'libs/jquery-2.1.0.min',
     underscore: 'libs/underscore-min',
     backbone: 'libs/backbone-min',
+    viewextensions: 'backbone-viewextensions',
     templates: '../templates'
   },
   shim: {
@@ -12,6 +13,10 @@ require.config({
     backbone: {
       deps: ['underscore', 'jquery'],
       exports: 'Backbone'
+    },
+    viewextensions: {
+      deps: ['backbone']
+
     }
   }
 });

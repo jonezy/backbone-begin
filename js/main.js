@@ -6,6 +6,7 @@ require(['config'], function() {
   require([
     'jquery',
     'app',
+    'viewextensions',
     // load your router, models, collections and views here and they will
     // all be attatched to the App varible and available throughout your 
     // app without having to load again. Of course this is optional, you 
