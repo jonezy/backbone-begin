@@ -15,5 +15,5 @@ define([
     }
   });
 
-  return App.Views;
+  return App;
 });
