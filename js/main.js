@@ -14,10 +14,11 @@ require(['config'], function() {
     'views/index',
     'views/docs',
     'views/navigation',
+    'viewmanager',
     'router'
   ], function($, App) {
     $(function() {
-      var appRouter = new App.Router();
+      var appRouter = new App.Router({viewManager:App.ViewManager});
       var navigation = new App.Views.Navigation();
     });
   });
