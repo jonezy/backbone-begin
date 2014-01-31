@@ -8,10 +8,13 @@ require(['config'], function() {
     'app',
     // load your router, models, collections and views here and they will
     // all be attatched to the App varible and available throughout your 
-    // app without having to load again.
+    // app without having to load again. Of course this is optional, you 
+    // can still load models and views etc in each individual file if
+    // you prefer to do so.
     'router',
-    'views/index'
-  ], function($, App, Router) {
+    'views/index',
+    'views/docs'
+  ], function($, App) {
     $(function() {
       var appRouter = new App.Router();
     });

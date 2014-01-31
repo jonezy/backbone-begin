@@ -13,8 +13,27 @@ body {
   padding:0;margin:0;
 }
 
-header {background:#333;padding: 20px;}
+header {background:#333;padding: 10px;}
+header #logo {float:left;}
 header h1 {margin:0;color:#fff;}
+header ul { float:left;}
+header ul li {
+  list-style:none;
+  float:left;
+  margin-right:10px;
+}
+header ul li a {
+  background:#fe2e9a;
+  padding:8px;
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:4px;
+}
+header ul li a.selected {
+  background:#fff;
+  color:#fe2e9a
+}
 .container {
   width:960px;
   margin:0 auto;
@@ -22,4 +41,19 @@ header h1 {margin:0;color:#fff;}
 
 #page {
   padding-top:10px;
+}
+
+/* clear fix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
 }
