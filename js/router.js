@@ -12,7 +12,6 @@ define([
       '*actions':'defaultAction'
     },
     initialize: function(options) {
-      var that = this;
       this.viewManager = options.viewManager;
 
       this.on('route', function() {
@@ -21,12 +20,12 @@ define([
 
       this.on('route:indexAction', function() {
         var view = new App.Views.Index();
-        that.viewManager.showView(view); 
+        this.viewManager.showView(view); 
       });
 
       this.on('route:docsAction', function() {
         var view = new App.Views.Docs();
-        that.viewManager.showView(view);
+        this.viewManager.showView(view);
       });
 
       this.on('route:defaultAction', function(actions) {
